@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(curl *)",
+      "Bash(lsof -ti:5174)",
+      "Bash(xargs kill)",
+      "Read(//private/var/folders/**)",
+      "Read(//Users/zhengyawen/Downloads/**)",
+      "Bash(npx vite *)",
+      "Bash(cp \"ec95d6961g73dd9155f8d29602db166e.jpg\" \"/Users/zhengyawen/0602cc作品集网站/public/images/avatar-new.jpg\")",
+      "Bash(cp \"ChatGPT Image 2026年6月8日 23_23_56 \\(1\\).png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/xiaohongshu-logo.png\")",
+      "Bash(cp \"ChatGPT Image 2026年6月8日 23_23_56 \\(2\\).png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/bilibili-logo.png\")",
+      "Bash(cp \"飞书作品集.png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/qrcode.png\")",
+      "Bash(sips -g all \"/Users/zhengyawen/0602简历/kimi/图片/ChatGPT Image 2026年6月8日 23_23_56 \\(1\\).png\")",
+      "Bash(sips -g all \"/Users/zhengyawen/0602简历/kimi/图片/ChatGPT Image 2026年6月8日 23_23_56 \\(2\\).png\")",
+      "Bash(sips -g all /tmp/test-xhs.png)",
+      "Bash(sips -g all /tmp/test-bili.png)",
+      "Read(//Users/zhengyawen/0602简历/kimi/图片/**)",
+      "Bash(cp \"1.JPG\" \"/Users/zhengyawen/0602cc作品集网站/public/images/portfolio-1.jpg\")",
+      "Bash(cp \"2.png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/portfolio-2.jpg\")",
+      "Bash(cp \"3.png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/portfolio-3.jpg\")",
+      "Bash(cp \"4.png\" \"/Users/zhengyawen/0602cc作品集网站/public/images/portfolio-4.jpg\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['data']['pic']\\)\")",
+      "Bash(cp \"1.mov\" \"/Users/zhengyawen/0602cc作品集网站/public/videos/shang.mov\")",
+      "Bash(cp \"2.mp4\" \"/Users/zhengyawen/0602cc作品集网站/public/videos/chiwei-ad.mp4\")",
+      "Bash(cp \"3.mp4\" \"/Users/zhengyawen/0602cc作品集网站/public/videos/vlog-1.mp4\")",
+      "Bash(cp \"4.mp4\" \"/Users/zhengyawen/0602cc作品集网站/public/videos/vlog-2.mp4\")",
+      "Bash(cp \"6.mp4\" \"/Users/zhengyawen/0602cc作品集网站/public/videos/chedaochengdu.mp4\")",
+      "Bash(cp \"/Users/zhengyawen/0602简历/kimi/图片/xiaohongshu.svg\" \"/Users/zhengyawen/0602cc作品集网站/public/images/xiaohongshu-logo.svg\")",
+      "Bash(cp \"/Users/zhengyawen/0602简历/kimi/图片/bilibili.svg\" \"/Users/zhengyawen/0602cc作品集网站/public/images/bilibili-logo.svg\")",
+      "Bash(echo 'node_modules/ *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 38% 11%;
+    --foreground: 0 0% 100%;
+    --card: 213 33% 17%;
+    --card-foreground: 0 0% 100%;
+    --popover: 213 33% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 30 87% 67%;
+    --primary-foreground: 210 38% 11%;
+    --secondary: 213 33% 17%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 33% 17%;
+    --muted-foreground: 215 16% 62%;
+    --accent: 213 33% 17%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 14 79% 61%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 20% 25%;
+    --input: 213 20% 25%;
+    --ring: 30 87% 67%;
+    --radius: 0.625rem;
+  }
+
+  * { @apply border-border; }
+
+  html { scroll-behavior: auto; }
+
+  body {
+    @apply bg-night-sky text-pure-white antialiased;
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 { font-family: 'Noto Serif SC', serif; }
+
+  ::selection {
+    background-color: rgba(244, 162, 97, 0.3);
+    color: #FFFFFF;
+  }
+}
+
+@layer utilities {
+  .text-gradient-orange {
+    background: linear-gradient(135deg, #F4A261, #E9C46A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-orange {
+    box-shadow: 0 0 20px rgba(244, 162, 97, 0.4), 0 0 60px rgba(244, 162, 97, 0.1);
+  }
+
+  .backdrop-glass {
+    background: rgba(13, 27, 42, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
