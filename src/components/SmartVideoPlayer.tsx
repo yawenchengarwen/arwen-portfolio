@@ -105,7 +105,7 @@ export default function SmartVideoPlayer({ videoUrl, videoFile, videoFiles, labe
         <div className="w-14 h-14 bg-lantern-orange/20 rounded-full flex items-center justify-center">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4A261" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3" /></svg>
         </div>
-        <p className="text-mist-white text-sm">前往平台观看</p>
+        <p className="text-mist-white text-sm">点击链接观看</p>
         <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-lantern-orange text-night-sky text-sm font-medium px-6 py-2.5 rounded-full hover:bg-warm-amber transition-colors">
           <ExternalLink size={14} />打开视频链接
         </a>
