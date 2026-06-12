@@ -13,6 +13,16 @@ function isXiaohongshu(url: string): boolean {
   return url.includes('xiaohongshu.com') || url.includes('xhslink.com')
 }
 
+function isTiktok(url: string): boolean {
+  return url.includes('tiktok.com')
+}
+
+function getTiktokEmbedUrl(url: string): string | null {
+  const match = url.match(/tiktok\.com\/@[\w.-]+\/video\/(\d+)/i)
+  if (match) return `https://www.tiktok.com/embed/v2/${match[1]}`
+  return null
+}
+
 function convertToEmbedUrl(url: string): string | null {
   if (isXiaohongshu(url)) return null
   const bvidMatch = url.match(/bilibili\.com\/video\/(BV[\w]+)/i)
@@ -43,6 +53,17 @@ export default function SmartVideoPlayer({ videoUrl, videoFile, videoFiles, labe
         </a>
       </div>
     )
+  }
+
+  if (videoUrl && isTiktok(videoUrl)) {
+    const embedUrl = getTiktokEmbedUrl(videoUrl)
+    if (embedUrl) {
+      return (
+        <div className={`relative w-full rounded-xl overflow-hidden bg-night-sky ${className}`} style={{ paddingBottom: '100%', maxWidth: '400px', margin: '0 auto', maxHeight: '70vh' }}>
+          <iframe src={embedUrl} className="absolute inset-0 w-full h-full" allowFullScreen allow="autoplay; encrypted-media" title="TikTok 视频" />
+        </div>
+      )
+    }
   }
 
   if (videoFile) {
@@ -79,14 +100,16 @@ export default function SmartVideoPlayer({ videoUrl, videoFile, videoFiles, labe
         </div>
       )
     }
-  }
-
-  return (
-    <div className={`w-full rounded-xl bg-night-sky/60 border border-white/5 flex flex-col items-center justify-center gap-3 ${className}`} style={{ minHeight: '200px' }}>
-      <div className="w-14 h-14 bg-lantern-orange/20 rounded-full flex items-center justify-center">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4A261" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3" /></svg>
+    return (
+      <div className={`w-full rounded-xl bg-night-sky/60 border border-white/5 flex flex-col items-center justify-center gap-3 ${className}`} style={{ minHeight: '200px' }}>
+        <div className="w-14 h-14 bg-lantern-orange/20 rounded-full flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4A261" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3" /></svg>
+        </div>
+        <p className="text-mist-white text-sm">前往平台观看</p>
+        <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-lantern-orange text-night-sky text-sm font-medium px-6 py-2.5 rounded-full hover:bg-warm-amber transition-colors">
+          <ExternalLink size={14} />打开视频链接
+        </a>
       </div>
-      <p className="text-pale-silver text-sm">视频即将上线</p>
-    </div>
-  )
+    )
+  }
 }

@@ -37,7 +37,7 @@ export default function ContactSection() {
             </div>
           </SectionWrapper>
           <SectionWrapper delay={0.3} className="mt-10">
-            <p className="text-pale-silver text-sm mb-4">扫码关注作品集</p>
+            <p className="text-pale-silver text-sm mb-4">扫码查看作品集</p>
             <div className="w-[140px] h-[140px] mx-auto rounded-xl overflow-hidden">
               <img src="/images/qrcode.png" alt="作品集二维码" className="w-full h-full object-contain" />
             </div>

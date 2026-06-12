@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-end gap-3 pr-4 border-r border-white/10">
             <a href="https://xhslink.com/m/8bApzrc9CFU" target="_blank" rel="noopener noreferrer" className="group/logo" title="小红书" aria-label="小红书">
-              <img src="/images/xiaohongshu-logo.svg" alt="小红书" className="h-[48px] w-auto relative -top-[4px] [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(18%)_sepia(98%)_saturate(4500%)_hue-rotate(342deg)_brightness(100%)_contrast(112%)] transition-opacity duration-300" />
+              <img src="/images/xiaohongshu-logo.svg" alt="小红书" className="h-[56px] w-auto [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(18%)_sepia(98%)_saturate(4500%)_hue-rotate(342deg)_brightness(100%)_contrast(112%)] transition-opacity duration-300" />
             </a>
             <a href="https://b23.tv/ZGTC7Df" target="_blank" rel="noopener noreferrer" className="group/logo" title="Bilibili" aria-label="Bilibili">
               <img src="/images/bilibili-logo.svg" alt="bilibili" className="h-[56px] w-auto [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(59%)_sepia(78%)_saturate(2180%)_hue-rotate(168deg)_brightness(94%)_contrast(101%)] transition-opacity duration-300" />
@@ -62,7 +62,7 @@ export default function Navbar() {
         </div>
         <div className="flex md:hidden items-center gap-3">
           <a href="https://xhslink.com/m/8bApzrc9CFU" target="_blank" rel="noopener noreferrer" className="group/logo" title="小红书" aria-label="小红书">
-            <img src="/images/xiaohongshu-logo.svg" alt="小红书" className="h-[48px] w-auto relative -top-[4px] [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(18%)_sepia(98%)_saturate(4500%)_hue-rotate(342deg)_brightness(100%)_contrast(112%)] transition-opacity duration-300" />
+            <img src="/images/xiaohongshu-logo.svg" alt="小红书" className="h-[56px] w-auto [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(18%)_sepia(98%)_saturate(4500%)_hue-rotate(342deg)_brightness(100%)_contrast(112%)] transition-opacity duration-300" />
           </a>
           <a href="https://b23.tv/ZGTC7Df" target="_blank" rel="noopener noreferrer" className="group/logo" title="Bilibili" aria-label="Bilibili">
             <img src="/images/bilibili-logo.svg" alt="bilibili" className="h-[56px] w-auto [filter:brightness(0)_saturate(100%)_invert(88%)_sepia(2%)_saturate(69%)_hue-rotate(17deg)_brightness(101%)_contrast(92%)] group-hover/logo:[filter:brightness(0)_saturate(100%)_invert(59%)_sepia(78%)_saturate(2180%)_hue-rotate(168deg)_brightness(94%)_contrast(101%)] transition-opacity duration-300" />

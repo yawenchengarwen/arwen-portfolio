@@ -10,17 +10,17 @@ interface WorkItem {
 }
 
 const worksAIGC: WorkItem[] = [
-  { id: 1, image: '/images/portfolio-1.jpg', type: 'MV', title: '观复', description: 'AIGC探索视频作品，画面与歌词结合', detail: '探讨个体的迷茫。生命在对抗重力与宿命中，能否挣脱尘世枷锁、找到自己的探索过程。下集产出中。', videoFile: 'shang.mov' },
-  { id: 3, image: '/images/portfolio-vlog-2.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 上", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。上集。', videoFile: 'vlog-1.mp4' },
-  { id: 7, image: '/images/portfolio-3.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 下", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。下集。', videoFile: 'vlog-2.mp4' },
-  { id: 2, image: '/images/portfolio-2.jpg', type: '品牌广告', title: '赤尾产品广告', description: '大广赛参赛作品，产品广告短视频创作', detail: '全国大学生广告艺术大赛参赛作品，围绕赤尾品牌进行产品广告短视频创作，结合品牌logo进行了视觉拓展，紧扣产品卖点。', videoFile: 'chiwei-ad.mp4' },
+  { id: 1, image: '/images/portfolio-1.jpg', type: 'MV', title: '观复', description: 'AIGC探索视频作品，画面与歌词结合', detail: '探讨个体的迷茫。生命在对抗重力与宿命中，能否挣脱尘世枷锁、找到自己的探索过程。下集产出中。（小红书点赞收藏40+）', videoUrl: 'https://www.bilibili.com/video/BV1UnEr6yEB8/' },
+  { id: 3, image: '/images/portfolio-vlog-2.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 上", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。上集。', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644447394955824414' },
+  { id: 7, image: '/images/portfolio-3.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 下", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。下集。', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644775287951052063' },
+  { id: 2, image: '/images/portfolio-2.jpg', type: '品牌广告', title: '赤尾产品广告', description: '大广赛参赛作品，产品广告短视频创作', detail: '全国大学生广告艺术大赛参赛作品，围绕赤尾品牌进行产品广告短视频创作，结合品牌logo进行了视觉拓展，紧扣产品卖点。（参赛作品暂无公开链接，可在网页末尾扫码查看飞书作品集）' },
 ]
 
 const worksReal: WorkItem[] = [
-  { id: 8, image: '/images/portfolio-shipian-1.jpg', type: '短视频', title: '当我用胶卷记录了一顿年夜饭', description: '小红书新年相关高赞短视频', detail: '用胶卷与数码的对比，展现年夜饭的温情，也让人思考团聚以后的冷清。', videoFile: 'nianyefan.mp4' },
-  { id: 4, image: '/images/portfolio-4.jpg', type: '转场短片', title: '扯到成都', description: '丝滑转场快剪，成都城市的影像记录', detail: '导演剪辑作品，以独特的视角记录成都这座城市的人文风貌与市井气息，融合传统与现代的城市影像表达。', videoFile: 'chedaochengdu.mp4' },
-  { id: 5, image: '/images/portfolio-5.jpg', type: '诗意纪录片', title: '十二时·十二世', description: '诗意纪录片，探索时间与空间流转的影像表达', detail: '独立作品，以"十二时辰"为线索，探索成都这个城市所蕴含的五行韵味，用诗意的手法深入探索人与自然的关系。', videoFile: 'shier.mp4' },
-  { id: 6, image: '/images/portfolio-6.jpg', type: '实验短片', title: '失语', description: '剪辑作品，以影像探讨沟通与表达的主题', detail: '通过影像讽刺和探讨现代社会中沟通障碍与情感表达的深层主题，引发人们的思考。', videoFile: 'shiyu.mp4' },
+  { id: 8, image: '/images/portfolio-shipian-1.jpg', type: '短视频', title: '当我用胶卷记录了一顿年夜饭', description: '小红书新年相关高赞短视频', detail: '用胶卷与数码的对比，展现年夜饭的温情，也让人思考团聚以后的冷清。（小红书点赞收藏2000+）', videoUrl: 'https://www.bilibili.com/video/BV1nzEr6YEA1/' },
+  { id: 4, image: '/images/portfolio-4.jpg', type: '转场短片', title: '扯到成都', description: '丝滑转场快剪，成都城市的影像记录', detail: '导演剪辑作品，以独特的视角记录成都这座城市的人文风貌与市井气息，融合传统与现代的城市影像表达。', videoUrl: 'https://www.bilibili.com/video/BV1pL4y147BZ/' },
+  { id: 5, image: '/images/portfolio-5.jpg', type: '诗意纪录片', title: '十二时·十二世', description: '诗意纪录片，探索时间与空间流转的影像表达', detail: '独立作品，以"十二时辰"为线索，探索成都这个城市所蕴含的五行韵味，用诗意的手法深入探索人与自然的关系。', videoUrl: 'https://www.bilibili.com/video/BV1Y4421Q7x5/' },
+  { id: 6, image: '/images/portfolio-6.jpg', type: '实验短片', title: '失语', description: '剪辑作品，以影像探讨沟通与表达的主题', detail: '通过影像讽刺和探讨现代社会中沟通障碍与情感表达的深层主题，引发人们的思考。', videoUrl: 'https://www.bilibili.com/video/BV1E54y1p7hv/' },
 ]
 
 function useDragScroll() {
@@ -70,13 +70,16 @@ export default function PortfolioSection() {
           <SectionWrapper>
             <span className="text-xs font-body-en tracking-[0.15em] text-lantern-orange uppercase">Portfolio</span>
             <h2 className="font-display-cn text-3xl md:text-4xl text-pure-white font-bold mt-3">作品集</h2>
-            <p className="text-pale-silver text-base mt-2">mv · 品牌广告 · 宠物vlog · 转场短片 · 诗意纪录片 · 实验短片</p>
+            <p className="text-pale-silver text-base mt-2">MV · 品牌广告 · 宠物vlog · 转场短片 · 诗意纪录片 · 实验短片</p>
           </SectionWrapper>
         </div>
       </div>
       <div className="px-6 md:px-12 lg:px-20 max-w-[1400px] mx-auto space-y-16">
         <ScrollRow title="AIGC作品" works={worksAIGC} onSelect={setSelectedWork} delay={0.1} cardRatio="3/4" />
         <ScrollRow title="实拍作品" works={worksReal} onSelect={setSelectedWork} delay={0.2} cardRatio="16/9" />
+      </div>
+      <div className="px-6 md:px-12 lg:px-20 mt-8">
+        <p className="text-center text-warm-amber text-xs opacity-80">（由于上传限制，高清视频请扫描网页最底部二维码或点击右上角小红书/B站按钮查看）</p>
       </div>
       {selectedFromList && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8" onClick={() => setSelectedWork(null)}>

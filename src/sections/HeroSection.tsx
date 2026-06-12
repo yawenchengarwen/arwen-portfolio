@@ -39,9 +39,9 @@ export default function HeroSection() {
           <button onClick={() => scrollTo('portfolio')} className="flex items-center gap-2 bg-lantern-orange text-night-sky font-medium px-6 md:px-9 py-3 md:py-3.5 rounded-full text-sm md:text-base transition-all duration-300 hover:bg-warm-amber hover:scale-[1.02] hover:shadow-button">
             <FolderOpen size={18} />查看作品集
           </button>
-          <button onClick={() => alert('简历下载功能即将上线')} className="flex items-center gap-2 bg-transparent border border-lantern-orange text-lantern-orange font-medium px-6 md:px-9 py-3 md:py-3.5 rounded-full text-sm md:text-base transition-all duration-300 hover:bg-lantern-orange hover:text-night-sky">
+          <a href="/郑雅文-Arwen.pdf" download className="flex items-center gap-2 bg-transparent border border-lantern-orange text-lantern-orange font-medium px-6 md:px-9 py-3 md:py-3.5 rounded-full text-sm md:text-base transition-all duration-300 hover:bg-lantern-orange hover:text-night-sky">
             <Download size={18} />下载简历
-          </button>
+          </a>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
           <span className="text-pale-silver text-xs tracking-wider">向下滚动</span>
