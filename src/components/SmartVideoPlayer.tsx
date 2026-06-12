@@ -59,8 +59,8 @@ export default function SmartVideoPlayer({ videoUrl, videoFile, videoFiles, labe
     const embedUrl = getTiktokEmbedUrl(videoUrl)
     if (embedUrl) {
       return (
-        <div className={`relative w-full rounded-xl overflow-hidden bg-night-sky ${className}`} style={{ paddingBottom: '100%', maxWidth: '400px', margin: '0 auto', maxHeight: '70vh' }}>
-          <iframe src={embedUrl} className="absolute inset-0 w-full h-full" allowFullScreen allow="autoplay; encrypted-media" title="TikTok 视频" />
+        <div className={`relative w-full rounded-xl overflow-hidden bg-night-sky mx-auto ${className}`} style={{ maxWidth: '320px', height: '500px', maxHeight: '70vh' }}>
+          <iframe src={embedUrl} className="w-full h-full" allowFullScreen allow="autoplay; encrypted-media" title="TikTok 视频" />
         </div>
       )
     }

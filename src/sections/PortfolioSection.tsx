@@ -11,8 +11,8 @@ interface WorkItem {
 
 const worksAIGC: WorkItem[] = [
   { id: 1, image: '/images/portfolio-1.jpg', type: 'MV', title: '观复', description: 'AIGC探索视频作品，画面与歌词结合', detail: '探讨个体的迷茫。生命在对抗重力与宿命中，能否挣脱尘世枷锁、找到自己的探索过程。下集产出中。（小红书点赞收藏40+）', videoUrl: 'https://www.bilibili.com/video/BV1UnEr6yEB8/' },
-  { id: 3, image: '/images/portfolio-vlog-2.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 上", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。上集。', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644447394955824414' },
-  { id: 7, image: '/images/portfolio-3.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 下", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。下集。', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644775287951052063' },
+  { id: 3, image: '/images/portfolio-vlog-2.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 上", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。上集。（由于国内网络限制视频可能无法观看，高清视频请扫描网页最后的作品集二维码查看）', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644447394955824414' },
+  { id: 7, image: '/images/portfolio-3.jpg', type: '宠物vlog', title: "Max & Sadie's Vlog 下", description: '可爱金毛和高冷法斗大学生的NBA球赛之旅', detail: 'AI KOL试水，以小狗Vlog的形式记录生活与旅行中的精彩瞬间，赋予了小狗完整的人设背景，采用了逐段图生视频的方式提高整体质感。下集。（由于国内网络限制视频可能无法观看，高清视频请扫描网页最后的作品集二维码查看）', videoUrl: 'https://www.tiktok.com/@maxsadieslife/video/7644775287951052063' },
   { id: 2, image: '/images/portfolio-2.jpg', type: '品牌广告', title: '赤尾产品广告', description: '大广赛参赛作品，产品广告短视频创作', detail: '全国大学生广告艺术大赛参赛作品，围绕赤尾品牌进行产品广告短视频创作，结合品牌logo进行了视觉拓展，紧扣产品卖点。（参赛作品暂无公开链接，可在网页末尾扫码查看飞书作品集）' },
 ]
 
@@ -74,12 +74,13 @@ export default function PortfolioSection() {
           </SectionWrapper>
         </div>
       </div>
-      <div className="px-6 md:px-12 lg:px-20 max-w-[1400px] mx-auto space-y-16">
+      <div className="px-6 md:px-12 lg:px-20 max-w-[1400px] mx-auto">
         <ScrollRow title="AIGC作品" works={worksAIGC} onSelect={setSelectedWork} delay={0.1} cardRatio="3/4" />
-        <ScrollRow title="实拍作品" works={worksReal} onSelect={setSelectedWork} delay={0.2} cardRatio="16/9" />
+        <p className="text-center text-warm-amber text-xs opacity-80 mt-2">（由于国内网络原因，部分视频可能无法打开，如需观看高清作品，请滑到网页底部扫描二维码查看）</p>
       </div>
-      <div className="px-6 md:px-12 lg:px-20 mt-8">
-        <p className="text-center text-warm-amber text-xs opacity-80">（由于上传限制，高清视频请扫描网页最底部二维码或点击右上角小红书/B站按钮查看）</p>
+      <div className="px-6 md:px-12 lg:px-20 max-w-[1400px] mx-auto mt-16">
+        <ScrollRow title="实拍作品" works={worksReal} onSelect={setSelectedWork} delay={0.2} cardRatio="16/9" />
+        <p className="text-center text-warm-amber text-xs opacity-80 mt-2">（由于上传限制，高清视频请扫描网页最底部二维码或点击右上角小红书/B站按钮查看）</p>
       </div>
       {selectedFromList && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8" onClick={() => setSelectedWork(null)}>

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Navbar from '@/components/Navbar'
+import FireworkCursor from '@/components/FireworkCursor'
 import HeroSection from '@/sections/HeroSection'
 import AboutSection from '@/sections/AboutSection'
 import PortfolioSection from '@/sections/PortfolioSection'
@@ -17,7 +18,8 @@ function App() {
   }, [])
 
   return (
-    <div className="relative min-h-screen bg-night-sky overflow-x-hidden">
+    <div className="relative min-h-screen bg-night-sky overflow-x-hidden" style={{ cursor: 'none' }}>
+      <FireworkCursor />
       <Navbar />
       <main>
         <HeroSection />
